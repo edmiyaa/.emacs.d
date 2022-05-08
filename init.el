@@ -10,7 +10,7 @@
 (use-package doom-themes
   :ensure t
   :config
-  (load-theme 'doom-one t))
+  (load-theme 'doom-acario-dark t))
 
 (use-package evil
   :ensure t
