@@ -24,6 +24,12 @@
         '((t . ivy--regex-fuzzy)))
   (ivy-mode))
 
+(use-package org
+  :config
+  (org-babel-do-load-languages
+   'org-babel-load-languages '((python . t)))
+  (setq org-confirm-babel-evaluate nil))
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (setq inhibit-startup-screen t)
