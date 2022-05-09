@@ -30,6 +30,10 @@
    'org-babel-load-languages '((python . t)))
   (setq org-confirm-babel-evaluate nil))
 
+(use-package org-bullets
+  :ensure t
+  :hook (org-mode . org-bullets-mode))
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (setq inhibit-startup-screen t)
