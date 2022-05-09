@@ -35,6 +35,8 @@
 (setq inhibit-startup-screen t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (global-display-line-numbers-mode)
+
 (global-whitespace-mode)
+(setq whitespace-style (quote (face trailing spaces tabs space-mark tab-mark)))
 
 (global-set-key (kbd "<f6>") (lambda() (interactive)(find-file user-init-file)))
