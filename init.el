@@ -35,6 +35,13 @@
   :ensure t
   :hook (org-mode . org-bullets-mode))
 
+(use-package company
+  :ensure t
+  :config
+  (setq company-idle-delay 0.1
+        company-minimum-prefix-length 1)
+  (global-company-mode))
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (setq inhibit-startup-screen t)
