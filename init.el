@@ -49,6 +49,6 @@
 (global-display-line-numbers-mode)
 
 (global-whitespace-mode)
-(setq whitespace-style (quote (face trailing spaces tabs space-mark tab-mark)))
+(setq whitespace-style (quote (face trailing tabs tab-mark)))
 
 (global-set-key (kbd "<f6>") (lambda() (interactive)(find-file user-init-file)))
