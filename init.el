@@ -45,6 +45,7 @@
 (setq inhibit-startup-screen t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (global-display-line-numbers-mode)
+(electric-pair-mode)
 
 (global-whitespace-mode)
 (setq whitespace-style (quote (face trailing tabs tab-mark)))
