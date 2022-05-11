@@ -20,8 +20,6 @@
 (use-package ivy
   :ensure t
   :config
-  (setq ivy-re-builders-alist
-        '((t . ivy--regex-fuzzy)))
   (ivy-mode))
 
 (use-package org
