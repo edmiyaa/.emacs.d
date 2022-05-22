@@ -20,6 +20,7 @@
 (use-package ivy
   :ensure t
   :config
+  (setq ivy-format-functions-alist '((t . ivy-format-function-arrow-line)))
   (ivy-mode))
 
 (use-package org
