@@ -54,6 +54,7 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (global-display-line-numbers-mode)
 (electric-pair-mode)
+(setq-default indent-tabs-mode nil)
 
 (global-whitespace-mode)
 (setq whitespace-style (quote (face trailing tabs tab-mark)))
