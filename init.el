@@ -60,3 +60,9 @@
 (setq whitespace-style (quote (face trailing tabs tab-mark)))
 
 (global-set-key (kbd "<f6>") (lambda() (interactive)(find-file user-init-file)))
+
+;; Load any .org files inside extra directory
+(setq extra-config-directory (expand-file-name (concat user-emacs-directory "extra")))
+(if (file-directory-p extra-config-directory)
+    (progn (setq extra-files (directory-files extra-config-directory t "\\.org$"))
+           (mapc 'org-babel-load-file extra-files)))
