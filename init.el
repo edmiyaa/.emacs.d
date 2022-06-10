@@ -48,6 +48,11 @@
   (evil-set-undo-system 'undo-tree)
   (global-undo-tree-mode 1))
 
+(use-package yaml-mode
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode)))
+
 (tool-bar-mode -1)
 (menu-bar-mode -1)
 (setq inhibit-startup-screen t)
