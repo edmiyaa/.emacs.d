@@ -66,6 +66,7 @@
 
 (global-set-key (kbd "<f5>") (lambda() (interactive)(find-file user-init-file)))
 (global-set-key (kbd "C-c C-k") 'comment-or-uncomment-region)
+(global-set-key (kbd "C-u") 'evil-scroll-up)
 
 ;; Load any .org files inside extra directory
 (setq extra-config-directory (expand-file-name (concat user-emacs-directory "extra")))
