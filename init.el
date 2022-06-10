@@ -65,6 +65,7 @@
 (setq whitespace-style (quote (face trailing tabs tab-mark)))
 
 (global-set-key (kbd "<f5>") (lambda() (interactive)(find-file user-init-file)))
+(global-set-key (kbd "C-c C-k") 'comment-or-uncomment-region)
 
 ;; Load any .org files inside extra directory
 (setq extra-config-directory (expand-file-name (concat user-emacs-directory "extra")))
