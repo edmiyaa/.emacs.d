@@ -15,6 +15,7 @@
 (use-package evil
   :ensure t
   :config
+  (modify-syntax-entry ?_ "w")
   (evil-mode))
 
 (use-package ivy
