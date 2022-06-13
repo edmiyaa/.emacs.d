@@ -65,7 +65,7 @@
 (global-whitespace-mode)
 (setq whitespace-style (quote (face trailing tabs tab-mark)))
 
-(global-set-key (kbd "<f5>") (lambda() (interactive)(find-file user-init-file)))
+(global-set-key (kbd "<f9>") (lambda() (interactive)(find-file user-init-file)))
 (global-set-key (kbd "C-c C-k") 'comment-or-uncomment-region)
 (global-set-key (kbd "C-u") 'evil-scroll-up)
 
