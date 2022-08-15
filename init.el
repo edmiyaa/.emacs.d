@@ -7,6 +7,8 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
+(setq org-hide-leading-stars t)
+
 ;; UI
 (load-theme 'tango-dark)
 (tool-bar-mode -1)
