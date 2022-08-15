@@ -7,11 +7,6 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-(setq use-package-compute-statistics t)
-
-(use-package magit
-  :ensure t)
-
 ;; UI
 (load-theme 'tango-dark)
 (tool-bar-mode -1)
