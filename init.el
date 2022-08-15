@@ -35,6 +35,11 @@
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (setq inhibit-startup-screen t)
 (global-display-line-numbers-mode)
+(setq-default truncate-lines t)
+
+;; Performance improvements
+(setq-default bidi-paragraph-direction 'left-to-right)
+(setq bidi-inhibit-bpa t)
 
 ;; Shortcuts
 (global-set-key (kbd "<f9>") (lambda() (interactive)(find-file user-init-file)))
