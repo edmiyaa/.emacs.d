@@ -11,12 +11,13 @@
 
 (use-package org
   :config
-  (setq org-hide-leading-stars t))
+  (setq org-startup-indented t))
 
 (use-package evil
   :ensure t
   :init
   (setq evil-want-C-u-scroll t)
+  (setq evil-want-C-i-jump nil)
   :config
   (modify-syntax-entry ?_ "w")
   (evil-set-undo-system 'undo-redo)
