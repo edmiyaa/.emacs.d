@@ -29,6 +29,16 @@
   (setq ivy-format-functions-alist '((t . ivy-format-function-arrow-line)))
   (ivy-mode))
 
+(use-package company
+  :ensure t
+  :config
+  (setq company-idle-delay 0.1
+	company-minimum-prefix-length 1)
+  (global-company-mode))
+
+(use-package eglot
+  :ensure t)
+
 ;; UI
 (load-theme 'tango-dark)
 (tool-bar-mode -1)
