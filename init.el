@@ -7,7 +7,7 @@
   (package-refresh-contents)
   (package-install 'use-package))
 
-;; (setq use-package-compute-statistics t)
+(setq use-package-compute-statistics t)
 
 (use-package org
   :config
@@ -18,10 +18,26 @@
   :init
   (setq evil-want-C-u-scroll t)
   (setq evil-want-C-i-jump nil)
+  (setq evil-want-keybinding nil)
   :config
   (modify-syntax-entry ?_ "w")
   (evil-set-undo-system 'undo-redo)
   (evil-mode))
+
+(use-package evil-collection
+  :after evil
+  :ensure t
+  :config
+  (evil-collection-init))
+
+(use-package magit
+  :ensure t
+  :defer)
+
+(use-package git-gutter
+  :ensure t
+  :config
+  (global-git-gutter-mode))
 
 (use-package ivy
   :ensure t
