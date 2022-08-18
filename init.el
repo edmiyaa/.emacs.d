@@ -76,6 +76,9 @@
 ;; Shortcuts
 (global-set-key (kbd "<f9>") (lambda() (interactive)(find-file user-init-file)))
 
+;; Load .el files
+(load-file (expand-file-name (concat user-emacs-directory "functions.el")))
+
 ;; Load extra .el files
 (let ((extra-config-directory (expand-file-name (concat user-emacs-directory "extra"))))
   (when (file-directory-p extra-config-directory)
