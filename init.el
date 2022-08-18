@@ -39,6 +39,11 @@
 (use-package eglot
   :ensure t)
 
+(use-package yaml-mode
+  :ensure t
+  :config
+  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode)))
+
 ;; UI
 (load-theme 'tango-dark)
 (tool-bar-mode -1)
@@ -54,3 +59,9 @@
 
 ;; Shortcuts
 (global-set-key (kbd "<f9>") (lambda() (interactive)(find-file user-init-file)))
+
+;; Load extra .el files
+(let ((extra-config-directory (expand-file-name (concat user-emacs-directory "extra"))))
+  (when (file-directory-p extra-config-directory)
+    (let ((extra-files (directory-files extra-config-directory t "\\.el")))
+      (mapc 'org-babel-load-file extra-files))))
