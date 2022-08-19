@@ -55,6 +55,11 @@
 (use-package eglot
   :ensure t)
 
+(use-package which-key
+  :ensure t
+  :config
+  (which-key-mode))
+
 (use-package yaml-mode
   :ensure t
   :config
