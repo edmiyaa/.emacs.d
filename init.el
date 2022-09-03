@@ -73,6 +73,8 @@
 (setq inhibit-startup-screen t)
 (global-display-line-numbers-mode)
 (setq-default truncate-lines t)
+(setq-default fill-column 100)
+(global-display-fill-column-indicator-mode)
 
 ;; Performance improvements
 (setq-default bidi-paragraph-direction 'left-to-right)
