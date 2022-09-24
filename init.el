@@ -71,6 +71,7 @@
 (menu-bar-mode -1)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 (setq inhibit-startup-screen t)
+(setq initial-scratch-message "")
 (global-display-line-numbers-mode)
 (setq-default truncate-lines t)
 (setq-default fill-column 100)
